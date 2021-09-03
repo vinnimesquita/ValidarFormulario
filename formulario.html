@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Atividade Prática 5</title>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="estilizar.css"></link>
+    <script src="validar.js"></script>
+</head>
+
+<body>
+    <form name="dados">
+        <p>
+            <label for="nome_completo">*</label> <label>Nome Completo:</label><br>
+            <input type="text" id="nome_completo" name="nome_completo" onchange="campoValido(this)">
+        </p>
+
+        <p>
+            <label for="idade">*</label> <label>Idade:</label><br>
+            <input type="number" id="idade" name="idade" onchange="campoValido(this)">
+        </p>
+
+        <p>
+            <label for="descricao">*</label> <label>Descrição:</label><br>
+            <textarea id="descricao" name="descricao" onchange="campoValido(this)"></textarea>
+        </p>
+
+        <p>
+            <label for="curso">*</label> <label>Curso:</label><br>
+            <select id="curso" name="curso" onchange="campoValido(this)">
+                    <option value="0">Selecione uma opção...</option>
+                    <option value="1">Análise e Desenvolvimento de Sistemas</option>
+                    <option value="2">Redes de Computadores</option>
+                    <option value="3">Sistemas para Internet</option>
+                </select>
+        </p>
+
+        <p>
+            <label for="periodo">*</label> <label>Período:</label><br>
+            <input type="radio" name="periodo" value="1" onchange="campoValido(this)"> 1º Período<br>
+            <input type="radio" name="periodo" value="2" onchange="campoValido(this)"> 2º Período<br>
+            <input type="radio" name="periodo" value="3" onchange="campoValido(this)"> 3º Período<br>
+            <input type="radio" name="periodo" value="4" onchange="campoValido(this)"> 4º Período
+        </p>
+
+        <p>
+            <button type="button" onclick="enviar()">Enviar</button>
+        </p>
+    </form>
+</body>
+
+</html>

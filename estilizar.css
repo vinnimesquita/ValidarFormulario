@@ -1,0 +1,17 @@
+label {
+    font-weight: bold;
+}
+
+input, select, textarea {
+    border-style: solid;
+    border-width: 1px;
+    border-color: gray;
+}
+
+.vermelho {
+    border-color: red;
+}
+
+label.vermelho {
+    color: red;
+}
